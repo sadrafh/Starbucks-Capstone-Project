@@ -15,28 +15,28 @@ Keep in mind as well that someone using the app might make a purchase through th
 
 ## Project Datasets
 The data is contained in three files:\
-portfolio.json — containing offer ids and metadata about each offer (duration, type, etc.)\
-profile.json — demographic data for each customer\
-transcript.json — records for transactions, offers received, offers viewed, and offers complete\
+* portfolio.json — containing offer ids and metadata about each offer (duration, type, etc.)\
+* profile.json — demographic data for each customer\
+* transcript.json — records for transactions, offers received, offers viewed, and offers complete\
 Here is the schema and explanation of each variable in the files:\
-portfolio.json\
-id (string) — offer id\
-offer_type (string) — a type of offer ie BOGO, discount, informational\
-difficulty (int) — the minimum required to spend to complete an offer\
-reward (int) — reward is given for completing an offer\
-duration (int) — time for the offer to be open, in days\
-channels (list of strings)\
-profile.json\
-age (int) — age of the customer\
-became_member_on (int) — the date when the customer created an app account\
-gender (str) — gender of the customer (note some entries contain ‘O’ for other rather than M or F)\
-id (str) — customer-id\
-income (float) — customer’s income\
-transcript.json\
-event (str) — record description (ie, transaction, offer received, offer viewed, etc.)\
-person (str) — customer-id\
-time (int) — time in hours since the start of the test. The data begins at time t=0\
-value — (dict of strings) — either an offer id or transaction amount depending on the record\
+### portfolio.json\
+* id (string) — offer id\
+* offer_type (string) — a type of offer ie BOGO, discount, informational\
+* difficulty (int) — the minimum required to spend to complete an offer\
+* reward (int) — reward is given for completing an offer\
+* duration (int) — time for the offer to be open, in days\
+* channels (list of strings)\
+### profile.json\
+* age (int) — age of the customer\
+* became_member_on (int) — the date when the customer created an app account\
+* gender (str) — gender of the customer (note some entries contain ‘O’ for other rather than M or F)\
+* id (str) — customer-id\
+* income (float) — customer’s income\
+### transcript.json\
+* event (str) — record description (ie, transaction, offer received, offer viewed, etc.)\
+* person (str) — customer-id\
+* time (int) — time in hours since the start of the test. The data begins at time t=0\
+* value — (dict of strings) — either an offer id or transaction amount depending on the record\
 
 ## Objective
 The objective of this project is to determine which demographic groups respond best to which offer type. This can support Starbucks in making reasonable decisions on sending offers to the right customers in order to boost revenue and perhaps save money.
