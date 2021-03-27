@@ -41,8 +41,8 @@ value — (dict of strings) — either an offer id or transaction amount dependi
 ## Objective
 The objective of this project is to determine which demographic groups respond best to which offer type. This can support Starbucks in making reasonable decisions on sending offers to the right customers in order to boost revenue and perhaps save money.
 To obtain the mentioned objective, the solution approach is as follows:\
-Data Exploration\
-Data Cleaning and Manipulation\
-Exploratory Data Analysis using Visualization for demographic\
-Data Pre-Processing\
-Data Modeling and Evaluation\
+* Data Exploration\
+* Data Cleaning and Manipulation\
+* Exploratory Data Analysis using Visualization for demographic\
+* Data Pre-Processing\
+* Data Modeling and Evaluation\
